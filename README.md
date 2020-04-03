@@ -8,10 +8,45 @@ In this activity, we created a new React-based Google Books Search app. This ass
 
 As an user I am looking for books that interest me. I would like to search for Books using Google and to be able to save them for future purchase. 
 
+## Installation
 
-### Submission on BCS
+RUN: NPM START
+--starts the server and the react app concurrently.
 
-* **Please submit both the deployed Heroku link to your homework AND the link to the Github Repository!**
+NPM Used
+
+Server
+
+"axios": "^0.19.2",
+    "concurrently": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.9.5"
+
+    React App
+
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-scripts": "3.4.0",
+    "react-router-dom": "^5.0.1"
+
+
+## Usage
+
+```Javascript/React/Node.JS
+
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently -k \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build"
+
+Deployed - https://googlebooks.herokuapp.com/search
+Github - https://github.com/andrelbarreto/Book_search
+
 
 ### Instructions
 
