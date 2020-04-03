@@ -44,7 +44,7 @@ Server
     "install": "cd client && npm install",
     "build": "cd client && npm run build"
 
-Deployed - https://googlebooks.herokuapp.com/search
+Deployed - https://google-books-nu.herokuapp.com/
 Github - https://github.com/andrelbarreto/Book_search
 
 
