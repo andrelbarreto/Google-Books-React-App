@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA,WACE,wBAA0B,CAC1B,aACF,CAHA,mBAEE,cACF,CAHA,eACE,sBAAuB,CACvB,WACF,CAEA,yBACE,eACE,aAAc,CACd,kBACF,CACF,CAVA,QACE,wBAAoC,CACpC,eACF","file":"main.9052aae3.chunk.css","sourcesContent":[".navbar {\r\n  background-color: rgb(131, 212, 240);\r\n  border-radius: 1;\r\n}\r\n"]}

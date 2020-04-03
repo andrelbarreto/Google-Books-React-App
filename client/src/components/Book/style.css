@@ -1,9 +1,11 @@
 .btn-container {
+  background-color: wheat;
   float: right;
 }
 
 @media (max-width: 767px) {
   .btn-container {
+    color: thistle;
     margin-bottom: 15px;
   }
 }

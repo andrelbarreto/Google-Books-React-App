@@ -63,9 +63,9 @@ class Home extends Component {
           <Col size="md-12">
             <Jumbotron>
               <h1 className="text-center">
-                <strong>(React) Google Books Search</strong>
+                <strong> Google Books Search</strong>
               </h1>
-              <h2 className="text-center">Search for and Save Books of your choice.</h2>
+              <h2 className="text-center">Search for and Save Books you chose!</h2>
             </Jumbotron>
           </Col>
           <Col size="md-12">
@@ -95,7 +95,7 @@ class Home extends Component {
                       Button={() => (
                         <button
                           onClick={() => this.handleBookSave(book.id)}
-                          className="btn btn-primary ml-2"
+                          className="btn btn-primary ml-2" 
                         >
                           Save
                         </button>
