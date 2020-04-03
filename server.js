@@ -4,6 +4,9 @@ const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
+const MongoClient = require('mongodb').MongoClient;
+const URI = "mongodb+srv://AndreBarreto:Ilsole4050@nu-bootcamp-5lrss.gcp.mongodb.net/test?retryWrites=true&w=majority";
+const client = new MongoClient(URI, { useNewUrlParser: true });
 
 // Configure body parsing for AJAX requests
 app.use(express.urlencoded({ extended: true }));
@@ -16,9 +19,15 @@ if (process.env.NODE_ENV === "production") {
 // Add routes, both API and view
 app.use(routes);
 
+// client.connect(err => {
+//   const collection = client.db("test").collection("books");
+//   // perform actions on the collection object
+//   client.close();
+// });
+
 // Connect to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://user1:password1@ds125871.mlab.com:25871/heroku_0xn0jnk7",
+  process.env.MONGODB_URI || "mongodb://localhost/googlebooks",
   {
     useCreateIndex: true,
     useNewUrlParser: true
