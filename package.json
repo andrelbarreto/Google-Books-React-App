@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "author": "Andre Barreto",
+  "engines": {
+    "npm": "6.14.4",
+    "node": "13.12.0"
+  },
   "main": "server.js",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -24,7 +28,8 @@
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
     "install": "cd client && npm install",
-    "build": "cd client && npm run build"
+    "build": "cd client && npm run build",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
