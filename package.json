@@ -5,7 +5,7 @@
   "author": "Andre Barreto",
   "engines": {
     "npm": "6.14.4",
-    "node": "13.12.0"
+    "node": "12.16.1"
   },
   "main": "server.js",
   "dependencies": {

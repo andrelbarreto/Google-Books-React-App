@@ -4,9 +4,8 @@ const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
-//const MongoClient = require('mongodb').MongoClient;
 
-//const client = new MongoClient(URI, { useNewUrlParser: true });
+//uses .env for MONGODB_URI
 
 // Configure body parsing for AJAX requests
 app.use(express.urlencoded({ extended: true }));
